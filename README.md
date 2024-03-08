@@ -1,5 +1,5 @@
 # SmartyQuest
-#### Video Demo:  https://youtu.be/SuU7AFYE6-8
+#### Video Demo: https://www.youtube.com/watch?v=1q5rq58YHRo
 #### Introduction:
 SmartyQuest is a web-based application developed with Flask, Python, JavaScript, and SQL. This project serves as a prototype for a gamified learning tool for elementary students to practice their reading and writing skills. It is designed to create an interactive environment where users can enhance their essential skills through engaging exercises. The essence of this web-based application lies in its ability to merge a captivating storyline with educational exercises, effectively testing students' comprehension.
 #### Prerequisites and Installation
