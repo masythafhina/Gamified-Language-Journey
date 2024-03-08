@@ -1,0 +1,55 @@
+{% extends "gameLayout.html" %}
+
+{% block title %}
+    Rainy Day
+{% endblock %}
+
+{% block storytitle %}
+    Rainy Day
+{% endblock %}
+
+{% block btn1id %}est-btn{% endblock %} {% block btn1pid %}est-p{% endblock %}
+
+{% block btn2id %}re-btn{% endblock %}{% block btn2pid %}re-p{% endblock %}
+
+{% block btn3id %}ful-btn{% endblock %}{% block btn3pid %}ful-p{% endblock %}
+
+{% block btn4id %}er-btn{% endblock %}{% block btn4pid %}er-p{% endblock %}
+
+{% block btn5id %}dis-btn{% endblock %}{% block btn5pid %}dis-p{% endblock %}
+
+{% block btn6id %}un-btn{% endblock %}{% block btn6pid %}un-p{% endblock %}
+
+{% block story %}
+    <form class="story story-rain" action="/rainyDay.html" method="post">
+        <p>I was
+            <input id="unhappy" name="unhappy" class="pre" type="text">
+            happy when it started raining. We had not finished our family soccer game.</p>
+        <p>My dad decided to bake a cake. I
+            <input id="dislike" name="dislike" class="pre" type="text"> like carrot cake, but everyone else loves it.
+        </p>
+        <p>My sister Sally had a bigg
+            <input id="bigger" name="bigger" class="suf" type="text"> slice of cake than Mom but Dad had the bigg
+            <input id="biggest" name="biggest" class="suf" type="text"> of all.
+        </p>
+        <p>When it stopped raining, we went outside to
+            <input id="replay" name="replay" class="pre" type="text"> play the game. It was a wonder
+            <input id="wonderful" name="wonderful" class="suf" type="text"> day after all.</p>
+            <hr>
+            <div class="footer-action">
+                <div class="footer story-rain" id="timer" name="timer">
+                    <span>00 : 00</span>
+                </div>
+                <button type="submit" class="footer story-rain" id="submit-btn">submit</button>
+            </div>
+        </form>
+
+
+{% endblock %}
+{% block speachp %}Do you need help sounding it out?{% endblock %}
+{% block image %}/static/raining_bkgd.png{% endblock %}
+{% block alt %}european boy with looking outside at rain{% endblock %}
+{% block script %}
+    <script type="text/javascript" src="/static/rainyDayScript.js"></script>
+{% endblock %}
+

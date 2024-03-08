@@ -1,0 +1,63 @@
+{% extends "layout.html" %}
+{% block bodyclass %}rainybody{% endblock %}
+{% block title %}
+    Rainy Day
+{% endblock %}
+
+{% block header %}
+    <header id="header-fill">
+        <div class="header-wrapper">
+            <div>
+                <h1 class="gameh1">{% block storytitle %}{% endblock %}</h1>
+                <p class="instructions">Enter correct afix for each blank, use the list provided.</p>
+            </div>
+            <div class="score">
+                <div class="score-icon-wrapper">
+                    <div class="check icon"></div>
+                </div>
+
+                <p class="feedback-p">Excellent!</p>
+            </div>
+        </div>
+    </header>
+{% endblock %}
+{% block game %}
+    <div class="main-wrapper">
+        <div class="flex_bottom">
+            <div class="practice-container">
+                <div id="fixes-wrapper">
+                    <div id="{% block btn1id %}{% endblock %}" class="fix">
+                        <p id="{% block btn1pid %}{% endblock %}">est</p>
+                    </div>
+                    <div id="{% block btn2id %}{% endblock %}" class="fix">
+                        <p id="{% block btn2pid %}{% endblock %}">re</p>
+                    </div>
+                    <div id="{% block btn3id %}{% endblock %}" class="fix">
+                        <p id="{% block btn3pid %}{% endblock %}">ful</p>
+                    </div>
+                    <div id="{% block btn4id %}{% endblock %}" class="fix">
+                        <p id="{% block btn4pid %}{% endblock %}">er</p>
+                    </div>
+                    <div id="{% block btn5id %}{% endblock %}" class="fix">
+                        <p id="{% block btn5pid %}{% endblock %}">dis</p>
+                    </div>
+                    <div id="{% block btn6id %}{% endblock %}" class="fix"">
+                        <p id="{% block btn6pid %}{% endblock %}">un</p>
+                    </div>
+
+                </div>
+            {% block story %}{% endblock %}
+
+        </div>
+
+        <div>
+            <div id="speach-bubble-id">
+                <p id="speach-bubble-p" class="speach-bubble">{% block speachp %}{% endblock %}</p>
+                <button id="sounding-btn">YES</button>
+            </div>
+            <img class="answering-kid" src="{% block image %}{% endblock %}" alt="{% block alt %}{% endblock %}">
+        </div>
+    </div>
+{% endblock %}
+
+

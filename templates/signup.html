@@ -1,0 +1,28 @@
+{% extends "loginLayout.html" %}
+
+{% block title %}
+    Signup
+{% endblock %}
+{% block pagekind %} Sign Up{% endblock %}
+
+
+{% block form %}
+    <form action="/signup" method="post">
+        <div class="form-group">
+            <input class="form-control" autofocus id="username" name="username" placeholder="Enter Username" type="text">
+        </div class="form-group">
+            <input type="hidden" value="{{ request.args.get('next', '') }}"/>
+        <div class="form-group">
+            <input class="form-control" id="password" name="password" placeholder="Enter Password" type="password">
+        </div>
+        <div class="form-group">
+            <input class="form-control" id="passwordConfirm" name="passwordConfirm" placeholder="Confirm Password" type="password">
+        </div>
+        <div class="form-group">
+            <button class="btn btn-primary go-btn" type="sumbmit">Sign Up</button>
+        </div>
+        <div class="form-group">
+            <button class="btn btn-secondary go-btn" type="link"><a href="/login" > Log In</a></button>
+        </div>
+    </form>
+{% endblock %}

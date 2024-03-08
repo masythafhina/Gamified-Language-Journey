@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+{% block title %}
+    Profile
+{% endblock %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block main %}
+<div class="index-wrapper">
+<header class="top-nav">
+    <button><a href="/">Home</a></button>
+    <button><a href="/logout" >Log Out</a></button>
+
+</header>
+<div class="home-container">
+    <div class="home-title-screen">
+        <h1>Welcome {{ username }}</h1>
+        <p id="last-played">Last played: {{ lastPlayed }}</p>
+        <p id="last-played">Last score: {{ lastscore }}%</p>
+        <hr>
+        <h2>Your Achivements</h2>
+
+        <div class="achivements">
+
+            <img class="story2" src="/static/raining_bkgd_icon.png">
+            <div>
+                <h3 class="text-left">Rainy Day Results</h3>
+                <p>You got {{ score }}% correct.</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+</div>
+{% endblock %}

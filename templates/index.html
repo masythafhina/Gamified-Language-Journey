@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block main %}
+<div class="index-wrapper">
+<header class="top-nav">
+    <button><a href="profile.html" >{{username}}</a></button>
+    <button><a href="/logout" >Log Out</a></button>
+</header>
+<div class="home-container">
+    <div class="home-title-screen">
+        <h1>Welcome to SmartyQuest</h1>
+        <p>Pick Your Story</p>
+        <div class="story-container">
+            <div>
+                <img class="story1" src="/static/lock.png">
+                <p class="center">locked story</p>
+            </div>
+            <div>
+                <a href="rainyDay.html"><img class="story2" src="/static/raining_bkgd_icon.png"></a>
+                <p class="center">Rainy Day</p>
+            </div>
+            <div>
+                <img class="story3" src="/static/lock1.png">
+                <p class="center">locked story</p>
+            </div>
+            <div>
+                <img class="story4" src="/static/lock2.png">
+                <p class="center">locked story</p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+{% endblock %}
