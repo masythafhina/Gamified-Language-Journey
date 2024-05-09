@@ -3,7 +3,7 @@
 #### Introduction:
 SmartyQuest is a web-based application developed with Flask, Python, JavaScript, and SQL. This project serves as a prototype for a gamified learning tool for elementary students to practice their reading and writing skills. It is designed to create an interactive environment where users can enhance their essential skills through engaging exercises. The essence of this web-based application lies in its ability to merge a captivating storyline with educational exercises, effectively testing students' comprehension.
 #### Prerequisites and Installation
-To embark on the SmartyQuest journey, a few prerequisites are essential. These include Python 3, Flask, an SQLite3 database, and a contemporary web browser. This project was built using the CS50 IDE.
+To start the SmartyQuest journey, a few prerequisites are essential. These include Python 3, Flask, an SQLite3 database, and a contemporary web browser. This project was built using the CS50 IDE.
 #### User Account Management
 The application features a user account management system, leveraging a SQL database to securely store user data, including hashed passwords. Hashing is achieved through the use of the werkzeug.security library. Python and Flask are integral in managing user authentication, form validation, and database interactions. The goal is to facilitate a seamless login experience for existing users, complemented by robust error handling for enhanced security. For newcomers, the signup process is straightforward, requiring a username and password, which are securely encrypted and stored.
 #### Design Choices and User Interaction
