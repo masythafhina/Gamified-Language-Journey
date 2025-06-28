@@ -16,7 +16,7 @@ app.config["SESSION_PERMANENT"] = False
 app.config["SESSION_TYPE"] = "filesystem"
 Session(app)
 
-#configure CS50 Library to use the project database
+#configure CS50 Library UMS to use the project database
 db = SQL("sqlite:///finalProject.db")
 
 @app.route("/")
@@ -178,3 +178,6 @@ def profile():
     username = loggedInUser[0]["username"]
 
     return render_template("profile.html", username = username)
+if __name__ == "__main__":
+    app.run(debug=True)
+    
